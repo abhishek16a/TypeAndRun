@@ -1,6 +1,6 @@
 package com.example.typeandrun;
 
-public class TypeOutput extends MainActivity {
+public class TypeOutput {
 
     private String manufacturer;
     private Integer year;
