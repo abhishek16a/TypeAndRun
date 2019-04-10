@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      typeOutput.setPrice(Float.parseFloat(etPrice.getText().toString()));
      typeOutput.setEngineSize(Integer.parseInt(etEngineSize.getText().toString()));
 
-     tvOutput.append("This is Vehicle No " +i+ "\n" + "Manufactured by" +etManufacturer+ "\n" + "color is");
+     tvOutput.append("This is Vehicle No " +i+ "\n" + "Manufactured by" +etManufacturer+ "\n" + "color is  ");
 
     }
 }
