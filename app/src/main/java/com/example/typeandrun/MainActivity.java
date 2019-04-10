@@ -2,6 +2,7 @@ package com.example.typeandrun;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,7 +38,9 @@ public class MainActivity extends AppCompatActivity{
         btnCreateCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                    if (!validate()){
+                        return;
+                    }
                 typeOutput.setManufacturer(etManufacturer.getText().toString());
                 typeOutput.setYear(Integer.parseInt(etYear.getText().toString()));
                 typeOutput.setColor(etColor.getText().toString());
@@ -53,6 +56,35 @@ public class MainActivity extends AppCompatActivity{
         });
 
 
+    }
+
+    private boolean validate() {
+        if(TextUtils.isEmpty(etManufacturer.getText().toString())){
+            etManufacturer.setError("please enter manufacturer");
+            etManufacturer.requestFocus();
+            return false;
+        }
+        if(TextUtils.isEmpty(etYear.getText().toString())){
+            etYear.setError("please enter Year of purchase");
+            etYear.requestFocus();
+            return false;
+        }
+        if(TextUtils.isEmpty(etColor.getText().toString())){
+            etColor.setError("please enter Color");
+            etColor.requestFocus();
+            return false;
+        }
+        if(TextUtils.isEmpty(etPrice.getText().toString())){
+            etPrice.setError("please enter Price");
+            etPrice.requestFocus();
+            return false;
+        }
+        if(TextUtils.isEmpty(etEngineSize.getText().toString())){
+            etEngineSize.setError("please enter manufacturer");
+            etEngineSize.requestFocus();
+            return false;
+        }
+        return true;
     }
 
 }
