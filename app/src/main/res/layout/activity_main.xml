@@ -8,70 +8,63 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
         android:hint="Type and Run"
         android:textSize="20dp"
         android:textAlignment="center"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
         android:hint="Manufacturer :"
         android:layout_marginLeft="15dp"/>
 
     <EditText
         android:id="@+id/etManufacturer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
         android:layout_margin="15dp"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
         android:hint="Year :"
         android:layout_marginLeft="15dp"/>
 
     <EditText
         android:id="@+id/etYear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
+        android:inputType="number"
         android:layout_margin="15dp"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
         android:hint="Color :"
+
         android:layout_marginLeft="15dp"/>
 
     <EditText
         android:id="@+id/etColor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
+        android:inputType="text"
         android:layout_margin="15dp"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
         android:hint="Purchased Price($) :"
         android:layout_marginLeft="15dp"/>
 
     <EditText
         android:id="@+id/etPrice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
+        android:inputType="number"
         android:layout_margin="15dp"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
         android:hint="EngineSize :"
         android:layout_marginLeft="15dp"/>
 
     <EditText
         android:id="@+id/etEngineSize"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TypeStyle"
         android:layout_margin="15dp"/>
     
     <Button
@@ -87,8 +80,7 @@
 
         <TextView
             android:id="@+id/tvOutput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TypeStyle"
             android:background="#FFC107"/>
 
     </ScrollView>
