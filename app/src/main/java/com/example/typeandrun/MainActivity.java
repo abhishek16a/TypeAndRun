@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity{
 
         typeOutput = new TypeOutput();
 
+
+
         btnCreateCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,11 +44,15 @@ public class MainActivity extends AppCompatActivity{
                 typeOutput.setPrice(Float.parseFloat(etPrice.getText().toString()));
                 typeOutput.setEngineSize(Integer.parseInt(etEngineSize.getText().toString()));
 
-                tvOutput.append("This is Vehicle No " + i + "\n" + "Manufactured by" + etManufacturer + "\n" + "color is  ");
+                tvOutput.append("This is Vehicle No " + i + "\n" + "Manufactured by " + typeOutput.getManufacturer()
+                                + "\n" + "color is "+ typeOutput.getColor()+ "\n" + "The price is "+typeOutput.getPrice()
+                                + "\n" +"The engine size is "+typeOutput.getEngineSize());
 
 
             }
         });
 
 
-    }}
+    }
+
+}
