@@ -1,6 +1,6 @@
 package com.example.typeandrun;
 
-public class TypeOutput {
+public class TypeOutput_abhishek {
 
     private String manufacturer;
     private Integer year;

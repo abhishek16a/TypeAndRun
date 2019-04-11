@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity{
      Button btnCreateCar;
      EditText etManufacturer, etYear, etColor, etPrice, etEngineSize;
     int i=1;
-    TypeOutput typeOutput;
+    TypeOutput_abhishek typeOutput_abhishek;
 
 
     @Override
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity{
         etEngineSize = findViewById(R.id.etEngineSize);
         tvOutput = findViewById(R.id.tvOutput);
 
-        typeOutput = new TypeOutput();
+        typeOutput_abhishek = new TypeOutput_abhishek();
 
 
 
@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity{
                     if (!validate()){
                         return;
                     }
-                typeOutput.setManufacturer(etManufacturer.getText().toString());
-                typeOutput.setYear(Integer.parseInt(etYear.getText().toString()));
-                typeOutput.setColor(etColor.getText().toString());
-                typeOutput.setPrice(Float.parseFloat(etPrice.getText().toString()));
-                typeOutput.setEngineSize(Integer.parseInt(etEngineSize.getText().toString()));
+                typeOutput_abhishek.setManufacturer(etManufacturer.getText().toString());
+                typeOutput_abhishek.setYear(Integer.parseInt(etYear.getText().toString()));
+                typeOutput_abhishek.setColor(etColor.getText().toString());
+                typeOutput_abhishek.setPrice(Float.parseFloat(etPrice.getText().toString()));
+                typeOutput_abhishek.setEngineSize(Integer.parseInt(etEngineSize.getText().toString()));
 
-                tvOutput.append("This is Vehicle No " + i + "\n" + "Manufactured by " + typeOutput.getManufacturer()
-                                + "\n" + "color is "+ typeOutput.getColor()+ "\n" + "The price is "+typeOutput.getPrice()
-                                + "\n" +"The engine size is "+typeOutput.getEngineSize());
+                tvOutput.append("This is Vehicle No " + i + "\n" + "Manufactured by " + typeOutput_abhishek.getManufacturer()
+                                + "\n" + "color is "+ typeOutput_abhishek.getColor()+ "\n" + "The price is "+typeOutput_abhishek.getPrice()
+                                + "\n" +"The engine size is "+typeOutput_abhishek.getEngineSize());
 
 
             }
